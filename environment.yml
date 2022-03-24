@@ -1,6 +1,6 @@
-name: sam
+name: fastqc
 channels:
   - bioconda
   - defaults
 dependencies:
-  - samtools
+  - fastqc
