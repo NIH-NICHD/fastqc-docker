@@ -1,5 +1,5 @@
-# samtools-docker
-Build a Container for bioconda samtools
+# fastqc-docker
+Build a Container for bioconda fastqc
 
 Steps to build this docker container.
 1. Look up on [anaconda](https://anaconda.org/) the tool you wish to install
@@ -19,7 +19,7 @@ To build your image from the command line:
 * Can do this on [Google shell](https://shell.cloud.google.com) - docker is installed and available
 
 ```bash
-docker build -t samtools .
+docker build -t fastqc .
 ```
 
 To test this tool from the command line 
@@ -31,5 +31,5 @@ PWD=$(pwd)
 
 Then mount and use your current directory and call the tool now encapsulated within the environment.
 ```bash
-docker run -it -v $PWD:$PWD -w $PWD samtools samtools -h
+docker run -it -v $PWD:$PWD -w $PWD fastqc fastqc -h
 ```
