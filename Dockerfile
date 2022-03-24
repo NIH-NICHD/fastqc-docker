@@ -2,7 +2,7 @@
 
 FROM continuumio/miniconda3
 LABEL description="Base docker image with conda and util libraries"
-ARG ENV_NAME="samtools"
+ARG ENV_NAME="fastqc"
 
 # Install the conda environment
 COPY environment.yml /
